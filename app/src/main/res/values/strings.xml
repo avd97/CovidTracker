@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Covid Tracker</string>
+    <string name="splash_txt1">COVID-19 TRACKER!</string>
+    <string name="splash_txt2">Check the corona cases around\nyour district and state</string>
+    <string name="splash_txt3">- by</string>
+    <string name="splash_txt4">Abhishek Deshpande</string>
+    <string name="active_case">Active Cases:</string>
+    <string name="confirmed_case">Confirmed Cases:</string>
+    <string name="recovered_cases">Recovered Cases:</string>
+    <string name="death_case">Deaths Cases:</string>
+    <string name="total_cases_in_india">TOTAL CASES IN INDIA</string>
+    <string name="statewise_covid_cases">STATE WISE COVID-19 CASES</string>
+</resources>

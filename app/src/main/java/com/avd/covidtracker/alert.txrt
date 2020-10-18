@@ -1,0 +1,23 @@
+AlertDialog.Builder builderSingle = new AlertDialog.Builder(DialogActivity.this);
+builderSingle.setIcon(R.drawable.ic_launcher);
+builderSingle.setTitle("Select One Name:-");
+final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(DialogActivity.this, android.R.layout.select_dialog_singlechoice);
+  List anyList = heroList.getMeetmeConfig().getConfigContent().getGender()
+for(gender : anyList)
+{
+arrayAdapter.add(gender)
+}
+builderSingle.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+builderSingle.setAdapter(arrayAdapter, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String strName = arrayAdapter.getItem(which);
+                Log.e("My Selected Gender", strName)
+       }
+        });
+builderSingle.show();
